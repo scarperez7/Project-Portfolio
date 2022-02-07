@@ -40,6 +40,9 @@ nav li a {
   text-decoration: none;
   color: var(--default-text-color);
 }
+nav li:hover a {
+  color: var(--primary-color);
+}
 
 nav ul {
   margin: 0;
@@ -106,8 +109,8 @@ img {
   transition: 150ms all ease-in-out;
 }
 
-.index-img:hover {
-  border: var(--accent-color) 2px solid;
+.work-content:hover {
+  border: var(--default-text-color) 1px solid;
   border-radius: 10px;
   transition: 150ms all ease-in-out;
 }
