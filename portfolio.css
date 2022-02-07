@@ -78,6 +78,11 @@ nav ul {
   color: var(--default-text-color);
 }
 
+.index-img:hover {
+  border: var(--accent-color) 2px solid;
+  border-radius: 10px;
+}
+
 img {
   max-width: 100%;
 }
