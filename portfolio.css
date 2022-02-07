@@ -91,11 +91,12 @@ img {
 .btn-default {
   background: var(--primary-color);
   color: var(--default-text-color);
+  border-radius: 30px;
 }
 
 .btn-bright {
   background: var(--default-text-color);
-  border-radius: 40px;
+  border-radius: 30px;
 }
 .btn-bright a {
   color: var(--dark-accent-color);
@@ -212,4 +213,48 @@ footer .container {
 }
 .contact-link:hover a {
   font-size: 36px;
+}
+
+@media (max-width: 960px) {
+  .greeting {
+    padding: 20px 50px;
+  }
+  .greeting h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .greeting p {
+    font-size: 24px;
+  }
+  .greeting h3 {
+    font-size: 20px;
+  }
+  .feature {
+    font-size: 15px;
+  }
+  .about-info {
+    text-align: center;
+  }
+  .about-info h1 {
+    font-size: 15px;
+  }
+  .work-header {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .work-content {
+    margin-bottom: 15px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+  .contact a {
+    font-size: 25px;
+  }
+  .contact h1 {
+    font-size: 36px;
+  }
+  .emblem {
+    padding: 5px;
+  }
 }
