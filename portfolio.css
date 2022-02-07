@@ -1,7 +1,7 @@
 :root {
   --header-font: "Noto Serif Display", serif;
   --default-font: "Source Sans Pro", sans-serif;
-  --primary-color: #7316ec;
+  --primary-color: #551ab4;
   --default-text-color: #f9f7fe;
   --light-accent-color: #d7a1fa;
   --accent-color: #74b999;
@@ -188,4 +188,28 @@ footer .container {
 }
 .work-content p {
   font-size: 15px;
+}
+.contact {
+  margin: 40px;
+  text-align: center;
+  padding: 60px;
+}
+.contact h3 {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--accent-color);
+  font-size: 700;
+}
+.contact a {
+  color: var(--default-text-color);
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.contact p {
+  font-weight: lighter;
+}
+.contact-link:hover a {
+  font-size: 36px;
 }
