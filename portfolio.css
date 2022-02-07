@@ -14,7 +14,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: var(--header-font);
   font-weight: 300;
   font-style: italic;
@@ -27,17 +28,30 @@ p {
 }
 nav {
   background: var(--dark-accent-color);
-  padding: 15px 0px;
+  padding: 15px 0;
 }
 nav li {
+  text-decoration: none;
   display: inline;
+  margin-right: 20px;
+  line-height: 42px;
+}
+nav li a {
+  text-decoration: none;
   color: var(--default-text-color);
-  margin-right: 10px;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
+}
+
+nav li.active a {
+  color: var(--accent-color);
+}
+
+img {
+  max-width: 100%;
 }
 
 .emblem {
@@ -50,6 +64,7 @@ nav ul {
 
   font-style: italic;
 }
+
 .greeting {
   background: var(--dark-accent-color);
   padding: 130px 40px;
@@ -78,14 +93,24 @@ nav ul {
   color: var(--default-text-color);
 }
 
+.btn-bright {
+  background: var(--default-text-color);
+  border-radius: 40px;
+}
+.btn-bright a {
+  color: var(--dark-accent-color);
+}
+.btn-bright:hover {
+  color: var(--primary-color);
+  transition: 150ms all ease-in-out;
+}
+
 .index-img:hover {
   border: var(--accent-color) 2px solid;
   border-radius: 10px;
+  transition: 150ms all ease-in-out;
 }
 
-img {
-  max-width: 100%;
-}
 hr {
   color: var(--accent-color);
   margin-right: 150px;
@@ -114,4 +139,34 @@ footer .container {
   background: var(--primary-color);
   border-radius: 50%;
   padding: 10px;
+  margin: 0;
+  transition: 150ms all ease-in-out;
+}
+.about-me-content {
+  height: 900px;
+}
+.about-me-content h5 {
+  font-style: normal;
+  color: var(--accent-color);
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+}
+.about-me-content h4 {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.self {
+  background: var(--dark-accent-color);
+  padding: 70px;
+}
+.about-info {
+  margin: 40px;
+  font-style: normal;
+  font-weight: lighter;
+}
+.about-info p {
+  font-size: 18px;
+  line-height: 25px;
 }
