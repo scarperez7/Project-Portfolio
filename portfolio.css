@@ -170,3 +170,22 @@ footer .container {
   font-size: 18px;
   line-height: 25px;
 }
+.work-header {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+.work-content {
+  text-align: center;
+}
+.work-content h5 {
+  font-style: normal;
+  color: var(--accent-color);
+  line-height: 15px;
+  font-size: 20px;
+}
+.work-content p {
+  font-size: 15px;
+}
