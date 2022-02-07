@@ -1,0 +1,112 @@
+:root {
+  --header-font: "Noto Serif Display", serif;
+  --default-font: "Source Sans Pro", sans-serif;
+  --primary-color: #7316ec;
+  --default-text-color: #f9f7fe;
+  --light-accent-color: #d7a1fa;
+  --accent-color: #74b999;
+  --dark-accent-color: rgba(89, 20, 248, 0.192);
+}
+body {
+  background: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header-font);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+p {
+  font-family: var(--default-font);
+  color: var(--default-text-color);
+}
+nav {
+  background: var(--dark-accent-color);
+  padding: 15px 0px;
+}
+nav li {
+  display: inline;
+  color: var(--default-text-color);
+  margin-right: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.emblem {
+  color: var(--primary-color);
+  font-size: 18px;
+  background: var(--default-text-color);
+  border-radius: 50%;
+  padding: 10px;
+  font-family: var(--header-font);
+
+  font-style: italic;
+}
+.greeting {
+  background: var(--dark-accent-color);
+  padding: 130px 40px;
+  border: 20px;
+  text-align: center;
+}
+.greeting p {
+  font-size: 36px;
+  line-height: 36px;
+}
+.greeting h1 {
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 100px;
+}
+.greeting h3 {
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--default-font);
+  font-style: normal;
+}
+.btn-default {
+  background: var(--primary-color);
+  color: var(--default-text-color);
+}
+
+img {
+  max-width: 100%;
+}
+hr {
+  color: var(--accent-color);
+  margin-right: 150px;
+  margin-left: 150px;
+}
+footer .container {
+  border-radius: 20px;
+}
+.social-links {
+  display: inline;
+  font-size: 25px;
+  background-color: var(--accent-background-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  line-height: 20.7px;
+  text-align: Center;
+}
+
+.social-links a {
+  color: var(--default-text-color);
+}
+
+.social-links:hover a {
+  font-size: 18px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
