@@ -11,6 +11,12 @@ body {
   background: black;
 }
 
+.index-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 h1,
 h2,
 h3,
@@ -55,6 +61,10 @@ nav li.active a {
 
 img {
   max-width: 100%;
+  margin: auto;
+}
+.img-index {
+  max-width: 50%;
 }
 
 .emblem {
@@ -169,6 +179,7 @@ footer .container {
   margin: 40px;
   font-style: normal;
   font-weight: lighter;
+  overflow-y: auto;
 }
 .about-info p {
   font-size: 18px;
