@@ -67,15 +67,8 @@ img {
   max-width: 50%;
 }
 
-.emblem {
-  color: var(--primary-color);
-  font-size: 18px;
-  background: var(--default-text-color);
-  border-radius: 50%;
-  padding: 10px;
-  font-family: var(--header-font);
-
-  font-style: italic;
+.emblem > img {
+  max-width: 50px;
 }
 
 .greeting {
@@ -119,12 +112,6 @@ img {
   transition: 150ms all ease-in-out;
 }
 
-.work-content:hover {
-  border: var(--default-text-color) 1px solid;
-  border-radius: 10px;
-  transition: 150ms all ease-in-out;
-}
-
 hr {
   color: var(--accent-color);
   margin-right: 150px;
@@ -132,6 +119,9 @@ hr {
 }
 footer .container {
   border-radius: 20px;
+}
+.via {
+  color: #74b999;
 }
 .social-links {
   display: inline;
@@ -195,6 +185,10 @@ footer .container {
 .work-content {
   text-align: center;
 }
+
+.work-content:hover {
+  transform: scale(1.1);
+}
 .work-content h5 {
   font-style: normal;
   color: var(--accent-color);
@@ -204,6 +198,19 @@ footer .container {
 .work-content p {
   font-size: 15px;
 }
+.react {
+  font-size: 10px;
+  color: rgb(77, 76, 76);
+  font-weight: bold;
+}
+.react-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.react-link:hover {
+  color: var(--light-accent-color);
+}
+
 .contact {
   margin: 40px;
   text-align: center;
