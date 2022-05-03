@@ -233,7 +233,7 @@ footer .container {
   font-weight: lighter;
 }
 .contact-link:hover a {
-  font-size: 36px;
+  color: var(--primary-color);
 }
 
 @media (max-width: 960px) {
