@@ -171,9 +171,10 @@ footer .container {
   font-weight: lighter;
   overflow-y: auto;
 }
-.about-info p {
-  font-size: 18px;
-  line-height: 25px;
+.blurb {
+  font-size: 16px;
+  line-height: 22px;
+  color: #f9f7fe;
 }
 .work-header {
   font-size: 56px;
