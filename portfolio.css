@@ -1,21 +1,15 @@
 :root {
   --header-font: "Noto Serif Display", serif;
   --default-font: "Source Sans Pro", sans-serif;
-  --primary-color: #551ab4;
-  --default-text-color: #f9f7fe;
-  --light-accent-color: #d7a1fa;
-  --accent-color: #74b999;
-  --dark-accent-color: rgba(89, 20, 248, 0.192);
+  --primary-color: #153d66;
+  --default-text-color: #c7ebf9;
+  --accent-color: #0ebdbd;
+  --dark-accent-color: #0a0a1b;
 }
 body {
-  background: black;
+  background: #37434c;
 }
 
-.index-row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-}
 
 h1,
 h2,
@@ -25,16 +19,20 @@ h5 {
   font-family: var(--header-font);
   font-weight: 300;
   font-style: italic;
-  color: var(--primary-color);
+  color: rgb(14, 14, 52);
 }
 
 p {
   font-family: var(--default-font);
   color: var(--default-text-color);
 }
-nav {
+.bg {
   background: var(--dark-accent-color);
   padding: 15px 0;
+}
+
+.name {
+  color:var(--default-text-color)
 }
 nav li {
   text-decoration: none;
@@ -47,7 +45,7 @@ nav li a {
   color: var(--default-text-color);
 }
 nav li:hover a {
-  color: var(--primary-color);
+  color: var(--dark-accent-color);
 }
 
 nav ul {
@@ -59,70 +57,75 @@ nav li.active a {
   color: var(--accent-color);
 }
 
+
+
 img {
   max-width: 100%;
   margin: auto;
 }
-.img-index {
-  max-width: 50%;
-}
-
-.emblem > img {
-  max-width: 50px;
-}
 
 .greeting {
   background: var(--dark-accent-color);
-  padding: 130px 40px;
+  padding: 50px 20px;
   border: 20px;
   text-align: center;
 }
+
 .greeting p {
-  font-size: 36px;
-  line-height: 36px;
-}
-.greeting h1 {
-  font-size: 64px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 100px;
-}
-.greeting h3 {
-  color: var(--accent-color);
-  font-size: 18px;
-  line-height: 24px;
-  font-family: var(--default-font);
-  font-style: normal;
+  font-weight: 100;
+  font-size:24px;
 }
 .btn-default {
-  background: var(--primary-color);
+  background: var(--dark-accent-color);
   color: var(--default-text-color);
-  border-radius: 30px;
+  border-radius: 20px;
+
 }
 
-.btn-bright {
-  background: var(--default-text-color);
-  border-radius: 30px;
+.btn-default:hover{
+  color: var(--accent-color);
 }
-.btn-bright a {
+
+hr{
+  margin: 0;
+  color: var(--accent-color)
+}
+
+
+
+.selfie {
+  max-width: 200px;
+}
+
+.about-content {
+  color: var(--default-text-color);
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 150;
+}
+
+.quote {
   color: var(--dark-accent-color);
 }
-.btn-bright:hover {
-  color: var(--primary-color);
-  transition: 150ms all ease-in-out;
+
+.quote-author {
+  color: var(--accent-color)
 }
 
-hr {
+footer{
+margin-top: 40px;
+}
+
+footer hr {
   color: var(--accent-color);
   margin-right: 150px;
   margin-left: 150px;
 }
+
 footer .container {
   border-radius: 20px;
 }
-.via {
-  color: #74b999;
-}
+
 .social-links {
   display: inline;
   font-size: 25px;
@@ -146,6 +149,8 @@ footer .container {
   margin: 0;
   transition: 150ms all ease-in-out;
 }
+
+
 .about-me-content {
   height: 900px;
 }
@@ -161,27 +166,45 @@ footer .container {
   line-height: 75px;
 }
 
-.self {
-  background: var(--dark-accent-color);
-  padding: 70px;
-}
+
 .about-info {
   margin: 40px;
   font-style: normal;
   font-weight: lighter;
   overflow-y: auto;
 }
-.blurb {
-  font-size: 16px;
-  line-height: 22px;
-  color: #f9f7fe;
+
+
+
+.certs {
+  color:var(--default-text-color)
 }
+.image-container{
+  max-width: 340px;
+}
+ span {
+   font-size: 12px;
+ }
+ .shecodes{
+   text-decoration: none;
+   color:var(--accent-color)
+ }
+
+ 
+ .image-row{
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+ }
+
 .work-header {
-  font-size: 56px;
-  text-align: center;
+  font-size: 36px;
+  margin-left: 100px;
   margin-top: 30px;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: var(--default-font);
   font-style: normal;
+  color:var(--default-text-color)
+
 }
 .work-content {
   text-align: center;
@@ -199,10 +222,27 @@ footer .container {
 .work-content p {
   font-size: 15px;
 }
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 36, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
 .react {
   font-size: 10px;
-  color: rgb(77, 76, 76);
-  font-weight: bold;
+
+  font-weight:200;
 }
 .react-link {
   color: var(--primary-color);
