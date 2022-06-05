@@ -179,9 +179,7 @@ footer .container {
 .certs {
   color:var(--default-text-color)
 }
-.image-container{
-  max-width: 340px;
-}
+
  span {
    font-size: 12px;
  }
@@ -200,57 +198,61 @@ footer .container {
   font-size: 36px;
   margin-left: 100px;
   margin-top: 30px;
-  font-weight: 400;
+  font-weight: 200;
   font-family: var(--default-font);
   font-style: normal;
-  color:var(--default-text-color)
+  color:var(--default-text-color);
+  text-decoration: underline;
 
 }
-.work-content {
-  text-align: center;
+
+.project-thumbnails{
+  
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 
-.work-content:hover {
-  transform: scale(1.1);
+.card{
+  background-color: #37434c09;
 }
+
+.card:hover{
+transform: scale(1.1);
+}
+.card-title{
+  font-weight: 500;
+}
+
+.card-img-overlay:hover{
+  opacity: 1;
+}
+
+.card-img-overlay{
+  background-color:#37434cdb;
+  opacity: 0;
+  margin-top:200px;
+ 
+}
+
+
 .work-content h5 {
   font-style: normal;
-  color: var(--accent-color);
+  color: var(--dark-accent-color);
   line-height: 15px;
   font-size: 20px;
 }
 .work-content p {
   font-size: 15px;
 }
-
-.image-container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  background: rgba(0, 0, 36, 0.8);
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  bottom: 0;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-}
-
-.react {
-  font-size: 10px;
-
-  font-weight:200;
-}
-.react-link {
-  color: var(--primary-color);
+.link{
   text-decoration: none;
+color:#0ebdbd
 }
-.react-link:hover {
-  color: var(--light-accent-color);
+
+.link:hover{
+  color:var(--default-text-color)
 }
+
 
 .contact {
   margin: 40px;
